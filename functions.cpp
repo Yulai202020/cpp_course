@@ -7,6 +7,6 @@ int main(){
     return 0;
 }
 
-void printf(std::string print, std::string end) {
+void printf(std::string print) {
     std::cout << print << "\n";
 }

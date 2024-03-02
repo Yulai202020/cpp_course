@@ -12,7 +12,7 @@ class Person {
             return name;
         }
 
-    private:
+    private: // You cant do person.grade cuz its privat but you can use them in function in this class
         int grade;
         std::string class_name; // like A, B, C
 };

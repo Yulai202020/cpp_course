@@ -4,25 +4,10 @@
 #include <chrono>
 
 void function_for_test(){
-    return;
+    for (int i = 0; i < 1000000; i++) {}
 }
 
 int main() {
-
-    // first method
-    clock_t time_req;
-
-	time_req = clock();
-
-    // function
-    function_for_test();
-
-   	time_req = clock() - time_req;
-
-    std::cout << "Elapsed time: " << (float)time_req/CLOCKS_PER_SEC << "s" << std::endl;
-
-    // second method
-
     auto start = std::chrono::high_resolution_clock::now();
 
     function_for_test();

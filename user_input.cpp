@@ -1,8 +1,6 @@
 #include <iostream>
 
 int main(){
-
-
     // standart get line from console
     // std::string uinput;
     // std::cin >> uinput;

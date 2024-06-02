@@ -1,6 +1,8 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -24,6 +26,8 @@ public:
 
 int main(){
     Solution sol;
-    sol.twoSum([2,7,11,15],9)
+    vector<int> nums = {2, 7, 11, 15};
+    sol.twoSum(nums, 9);
+
     return 0;
 }

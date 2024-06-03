@@ -1,14 +1,20 @@
 #include <iostream>
-#include <any>
 #include <string>
+#include <any>
 
-int main(){
-    int x = 3; // just number
+int main() {
+    int x; // create variable
+    x = 4; // give value
+
+    int y = 3; // just number
     double pi = 3.14; // number with decimal
-    bool student = true; // or false
+    float e = 2.71828; // its number with decimal too
+
+    bool student = true; // true or false (yes or no)
+
+    char a = 'A'; // just 1 char
     std::string name = "yulai"; // normal string
     std::any name1 = ""; // anythink
-    char a = 'A'; // just 1 char
 
     std::cout << name << "\n"; // out
     return 0;

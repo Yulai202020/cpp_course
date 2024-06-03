@@ -1,9 +1,21 @@
 #include <iostream>
 class Person {
     public:
+        // variables
         int age;
         std::string name;
 
+        // constructor (when var created)
+        Person() {
+            std::cout << "Constructor is initilizated." << std::endl;
+        }
+
+        // destructior (when var deleting)
+        ~Person() {
+            std::cout << "Destructior is initilizated." << std::endl;
+        }
+
+        // functions
         int get_age() {
             return age;
         }

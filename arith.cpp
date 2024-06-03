@@ -35,7 +35,7 @@ int main() {
     // % its like / but in int
     int remainer = students % 2;
 
-    std::cout << remainer << "\n";
+    std::cout << remainer << "\n"; // its 0 cuz students its divide by 2
 
     //
     // first of all parenthesis

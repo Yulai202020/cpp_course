@@ -2,24 +2,25 @@
 
 int main(){
     // if condition
-    if (true) {
-        // its will runs anyways
-        std::cout << 'c++ is good' << "\n";
-    }
-    else if (false) {
-        // its will not run
-        std::cout << 'c++ is bad' << "\n";
+    int age;
+
+    std::cout << "Enter your age: ";
+
+    if (age >= 18){
+        std::cout << "You are an aldut." << std::endl;
+    } else if (age <= 12) {
+        std::cout << "You are teenager." << std::endl;
+    } else {
+        std::cout << "You are baby." << std::endl;
     }
 
-    // usage
-
+    // use:
     // if (condition1) {
-        // if condition is true this code will runs
+    //     // do smth
     // } else if (condition2) {
-        // if condition is false and condition2 is true its will runs
-    // }
-    // else {
-        // if all conditions is false its will runs
+    //     // do smth else
+    // } else {
+    //     // if condition1 and condition2 is not true
     // }
 
     return 0;

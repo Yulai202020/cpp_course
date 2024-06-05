@@ -2,10 +2,10 @@
 
 int main(){
     bool not_guessed = true;
+    int random_number = rand() % 100 - 1;
 
-    int random_number = rand() % 100 - 1
     while (not_guessed) {
-        std::cout << "Guess number from 1 to 100 : "
+        std::cout << "Guess number from 1 to 100 : ";
         int entered_nuber;
         std::cin >> entered_nuber;
 

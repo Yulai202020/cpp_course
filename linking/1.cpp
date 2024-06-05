@@ -1,10 +1,12 @@
 #include <iostream>
 
 int main() {
-    int a = 1;
-    int& b = a; // create link
+    int num = 1;
+    int* ptr = &num; // create pointer
 
-    b = 2; // change value of link
+    *ptr = 2; // change value of pointer
+    // if you will print b you will get link in memory (ram)
 
-    std::cout << a << std::endl; ///2 cuz we setted link
+    std::cout << num << std::endl; // 2 cuz we value of pointer
+    std::cout << ptr << std::endl; // link to ram
 }

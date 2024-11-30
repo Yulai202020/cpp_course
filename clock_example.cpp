@@ -16,9 +16,9 @@ int main() {
 
     std::chrono::duration<double> elapsed =  end - start;
 
-    long int nanoseconds = std::chrono::duration_cast<std::chrono::nanoseconds>(elapsed).count();
+    long int nanoseconds = std::chrono::duration_cast<std::chrono::milliseconds>(elapsed).count();
 
-    std::cout << "Elapsed time: " << nanoseconds  << "ns" << std::endl;
+    std::cout << "Elapsed time: " << nanoseconds << "ns" << std::endl;
 
     return 0;
 }
